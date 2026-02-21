@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrera Offroad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Race Timer HUD (top-right) -->
+    <div id="race-hud">
+        <div class="hud-container">
+            <div class="hud-title">🏁 Carrera Offroad</div>
+            <div class="timer-display" id="timer">60:00</div>
+            <div class="checkpoint-info">
+                <span>CP</span>
+                <span class="current" id="cp-current">1</span>
+                <span class="total" id="cp-total">/ 103</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lobby Panel (bottom-right) -->
+    <div id="lobby-panel">
+        <div class="lobby-container">
+            <div class="lobby-title">🏎️ Carrera Offroad</div>
+            <div class="lobby-subtitle">Lobby abierto — la carrera comenzará pronto</div>
+            <div class="lobby-timer" id="lobby-timer">10:00</div>
+            <div class="lobby-players-title">Jugadores inscritos</div>
+            <ul class="lobby-players" id="lobby-players"></ul>
+        </div>
+    </div>
+
+    <!-- Leaderboard (below HUD) -->
+    <div id="leaderboard-panel">
+        <div class="lb-container">
+            <div class="lb-title">🏆 Clasificación</div>
+            <ul class="lb-list" id="lb-list"></ul>
+        </div>
+    </div>
+
+    <!-- Toast Notifications (top-center) -->
+    <div id="notifications"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
